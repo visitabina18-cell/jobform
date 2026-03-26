@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Job Application Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <style>
+        body{
+            font-family: Arial;
+            background: linear-gradient(to right,#d9f2ff,#ffffff);
+            margin:0;
+        }
+
+        header{
+            background:#004080;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        .container{
+            width:70%;
+            margin:auto;
+            background:white;
+            padding:25px;
+            margin-top:20px;
+            border-radius:10px;
+            box-shadow:0 0 10px gray;
+        }
+
+        h2{ color:#004080; }
+
+        label{ font-weight:bold; }
+
+        input,select,textarea{
+            width:100%;
+            padding:8px;
+            margin-top:5px;
+            margin-bottom:15px;
+            border-radius:5px;
+            border:1px solid gray;
+        }
+
+        .gender{
+            width:auto;
+        }
+
+        button{
+            background:#004080;
+            color:white;
+            padding:12px 20px;
+            border:none;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#00264d;
+        }
+
+        footer{
+            text-align:center;
+            background:#004080;
+            color:white;
+            padding:10px;
+            margin-top:20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Online Job Application Form</h1>
+</header>
+
+<div class="container">
+
+<form id="jobForm">
+
+<h2>Personal Information</h2>
+
+<label>Full Name</label>
+<input type="text" id="name" required>
+
+<label>Date of Birth</label>
+<input type="date" id="dob">
+
+<label>Gender</label><br>
+<input type="radio" name="gender" value="Male" class="gender"> Male
+<input type="radio" name="gender" value="Female" class="gender"> Female
+<input type="radio" name="gender" value="Other" class="gender"> Other
+<br><br>
+
+<label>Phone Number</label>
+<input type="tel" id="phone">
+
+<label>Email Address</label>
+<input type="email" id="email">
+
+<label>Address</label>
+<textarea rows="3"></textarea>
+
+<h2>Job Details</h2>
+
+<label>Position</label>
+<select id="position">
+<option value="">Select</option>
+<option>Software Developer</option>
+<option>Web Designer</option>
+<option>System Analyst</option>
+</select>
+
+<label>Expected Salary</label>
+<input type="number" id="salary">
+
+<h2>Declaration</h2>
+
+<label>
+<input type="checkbox" id="agree"> I agree
+</label>
+
+<br><br>
+
+<button type="submit">Submit</button>
+<button type="reset">Reset</button>
+
+</form>
+
+</div>
+
+<footer>
+<p>© 2026 Job Portal</p>
+</footer>
+
+</body>
+</html>
